@@ -11,17 +11,17 @@ Tested with Python 3.8.5 :
 pip install requirements.txt
 
 ## Create Database and table in MySQL:
-"""
-CREATE TABLE IF NOT EXISTS hultig_crawler(
-	`ID` bigint(20) AUTO_INCREMENT NOT NULL,
-	`URL` varchar(255) NOT NULL,
-	`Title` varchar(255) NOT NULL,
-	`Tags` varchar(255) ,
-	`Text` longtext ,
-    `Time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
-	PRIMARY KEY (id)
-    )
-"""
+
+	CREATE TABLE IF NOT EXISTS hultig_crawler(
+		`ID` bigint(20) AUTO_INCREMENT NOT NULL,
+		`URL` varchar(255) NOT NULL,
+		`Title` varchar(255) NOT NULL,
+		`Tags` varchar(255) ,
+		`Text` longtext ,
+    		`Time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
+		PRIMARY KEY (id)
+    		)
+
 ## configure database settings in hultig_crawler\hultig_crawler\pipelines.py :
     
     table = 'hultig_crawler'
