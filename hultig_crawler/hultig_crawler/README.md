@@ -18,9 +18,9 @@ pip install requirements.txt
 		`Title` varchar(255) NOT NULL,
 		`Tags` varchar(255) ,
 		`Text` longtext ,
-    		`Time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
+    	`Time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
 		PRIMARY KEY (id)
-    		)
+    	)
 
 ## configure database settings in hultig_crawler\hultig_crawler\pipelines.py :
     
