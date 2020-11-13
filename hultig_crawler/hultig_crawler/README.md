@@ -7,10 +7,10 @@ This is tutorial for using the HultigCrawler, A text crawler based on scrapy and
 ## Setup
 Tested with Python 3.8.5 :
 
-# install dependencies present in hultig_crawler folder, i,e; hultig_crawler\hultig_crawler\requirements.txt
+## install dependencies present in hultig_crawler folder, i,e; hultig_crawler\hultig_crawler\requirements.txt
 pip install requirements.txt
 
-# Create Database and table in MySQL:
+## Create Database and table in MySQL:
 
 CREATE TABLE IF NOT EXISTS hultig_crawler(
 	`ID` bigint(20) AUTO_INCREMENT NOT NULL,
@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS hultig_crawler(
 	PRIMARY KEY (id)
     )
 
-# configure database settings in hultig_crawler\hultig_crawler\pipelines.py :
+## configure database settings in hultig_crawler\hultig_crawler\pipelines.py :
     
     table = 'hultig_crawler'
     conf = {
