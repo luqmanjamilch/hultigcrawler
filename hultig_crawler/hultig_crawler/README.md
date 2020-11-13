@@ -7,7 +7,7 @@ This is tutorial for using the HultigCrawler, A text crawler based on scrapy and
 ## Setup
 Tested with Python 3.8.5 :
 
-## install dependencies present in hultig_crawler folder, i,e; hultig_crawler\hultig_crawler\requirements.txt
+## Install dependencies using requirements.txt present in hultig_crawler folder, i,e; hultig_crawler\hultig_crawler\requirements.txt
 pip install requirements.txt
 
 ## Create Database and table in MySQL:
@@ -22,7 +22,7 @@ pip install requirements.txt
 		PRIMARY KEY (id)
     	)
 
-## configure database settings in hultig_crawler\hultig_crawler\pipelines.py :
+## Configure database settings in hultig_crawler\hultig_crawler\pipelines.py :
     
     table = 'hultig_crawler'
     conf = {
